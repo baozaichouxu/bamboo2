@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: eureka
+server:
+  port: 1112
+
+eureka:
+  instance:
+    hostname: peer2
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
