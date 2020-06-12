@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: ribbon-consumer2
+server:
+  port: 9000
+
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:1112/eureka/,http://localhost:1111/eureka/
